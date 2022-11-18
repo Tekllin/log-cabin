@@ -1,0 +1,293 @@
+
+body
+{
+    width: 99vw;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+}
+#back
+{
+    background: url(haha.jpg) no-repeat center top;
+    width: 98%;
+    height: 90vh;
+    margin: 1% 1% 0 1% ;
+    border-radius: 30px;
+}
+header
+{
+    width: 99%;
+    height: 20vh;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    transition: 0.3s;
+}
+#head
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#un
+{
+    display: flex;
+    flex-direction: row;
+}
+nav
+{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+    margin-right: 15px;
+}
+#logo
+{
+    margin-top: 2%;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    transition: transform 0.5s;
+    transform: scale(0.65);
+}
+#logo:hover
+{
+    transform: scale(0.5);
+}
+#cabin
+{
+
+    color: white;
+    width: 80px;
+}
+#cabin::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: transform 0.5s;
+    background: white;
+}
+#cabin:hover::after
+{
+    transform: scale(1);
+}
+#member
+{
+
+    color: white;
+    width: 83px;
+}
+#member::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: transform 0.5s;
+    background: white;
+}
+#member:hover::after
+{
+    transform: scale(1);
+}
+#public
+{
+    color: white;
+    width: 70px;
+}
+#public::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: transform 0.5s;
+    background: white;
+}
+#public:hover::after
+{
+    transform: scale(1);
+}
+#about
+{
+    color: white;
+    width: 65px;
+}
+#about::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: transform 0.5s;
+    background: white;
+}
+#about:hover::after
+{
+    transform: scale(1) ;
+}
+#character
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(image/charcblanc.gif) no-repeat center;
+    margin: 5px;
+    transition-duration: 0.5s;
+}
+#character:hover
+{
+    background: white url(image/characnoir.gif) no-repeat center;
+}
+#characterscroll
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(image/characnoir.gif) no-repeat center;
+    margin: 5px;
+    transition-duration: 0.5s;
+}
+#characterscroll:hover
+{
+    background: rgb(43, 133, 118) url(image/charcblanc.gif) no-repeat center;
+}
+.ombre
+{
+    text-shadow: 1px 1px black;
+    font-size: 0.8em;
+    margin: 15px;
+}
+#un
+{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+#agauche
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(43, 133, 118);
+    width: 180px;
+    height: 35%;
+    margin-left: 5%;
+    border-radius: 50px;
+    transition-duration: 0.2s;
+    color: white;
+    font-size: 0.9em;
+}
+#agauche:hover
+{
+    background-color: rgb(28, 83, 74)
+}
+#adroite
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 160px;
+    height: 35%;
+    margin-left: 2%;
+    border-radius: 50px;
+    transition-duration: 0.2s;
+    font-size: 0.9em;
+}
+#adroite:hover
+{
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+#outdoor
+{
+    font-size: 1.5em;
+    text-decoration: solid;
+}
+.scroll
+{
+    background-color: white;
+    height: 15vh;
+}
+#panneau
+{
+    padding-right: 1.5%;
+}
+@media screen and (min-width: 1150px) 
+{
+    #nav
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 1150px)
+{   
+   nav
+   {
+        display: none;
+   }
+   #un
+   {
+        display: none;
+   }
+   #rond
+   {
+        border: 3px solid white;
+        width: 35px;
+        height: 35px;
+        border-radius: 40px;
+        margin-left: 40px;
+        align-self: center;
+   }
+   #nav
+   {
+        width: 30px;
+        height: 30px;
+        align-self: center;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 40px;
+        transition: 0.5s;
+   }
+   .nav
+   {
+        width: 100%;
+        height: 7%;
+        background-color: white;
+        border-radius: 2px;
+   }
+}
+

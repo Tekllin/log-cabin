@@ -5,6 +5,7 @@ body
     height: 200vh;
     margin: 0;
     padding: 0;
+
 }
 #back
 {
@@ -13,11 +14,12 @@ body
     height: 90vh;
     margin: 1% 1% 0 1% ;
     border-radius: 30px;
+
 }
 header
 {
     width: 99%;
-    height: 20vh;
+    height: 18vh;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -54,7 +56,7 @@ nav
 }
 #logo
 {
-    margin-top: 2%;
+    margin-bottom: 2%;
     width: 120px;
     display: flex;
     flex-direction: column;
@@ -74,77 +76,21 @@ nav
     color: white;
     width: 80px;
 }
-#cabin::after
-{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    transform: scale(0);
-    transition: transform 0.5s;
-    background: white;
-}
-#cabin:hover::after
-{
-    transform: scale(1);
-}
 #member
 {
 
     color: white;
     width: 83px;
 }
-#member::after
-{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    transform: scale(0);
-    transition: transform 0.5s;
-    background: white;
-}
-#member:hover::after
-{
-    transform: scale(1);
-}
 #public
 {
     color: white;
     width: 70px;
 }
-#public::after
-{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    transform: scale(0);
-    transition: transform 0.5s;
-    background: white;
-}
-#public:hover::after
-{
-    transform: scale(1);
-}
 #about
 {
     color: white;
     width: 65px;
-}
-#about::after
-{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    transform: scale(0);
-    transition: transform 0.5s;
-    background: white;
-}
-#about:hover::after
-{
-    transform: scale(1) ;
 }
 #character
 {
@@ -210,7 +156,7 @@ nav
 }
 #agauche:hover
 {
-    background-color: rgb(28, 83, 74)
+    background-color: rgb(28, 83, 74);
 }
 #adroite
 {
@@ -238,11 +184,39 @@ nav
 .scroll
 {
     background-color: white;
-    height: 15vh;
+    height: 135px;
 }
 #panneau
 {
     padding-right: 1.5%;
+}
+.soulignageblanc::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: transform 0.5s;
+    background: white;
+}
+.soulignageblanc:hover::after
+{
+    transform: scale(1);
+}
+.soulignagenoir::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: transform 0.5s;
+    background: black;
+}
+.soulignagenoir:hover::after
+{
+    transform: scale(1);
 }
 @media screen and (min-width: 1150px) 
 {
@@ -279,12 +253,14 @@ nav
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
         margin-right: 40px;
         transition: 0.5s;
+        border-radius: 5px;
    }
    .nav
    {
-        width: 100%;
+        width: 90%;
         height: 7%;
         background-color: white;
         border-radius: 2px;

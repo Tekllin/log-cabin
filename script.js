@@ -1,4 +1,4 @@
-let nav = document.getElementById('nav');
+const nav = document.getElementById('nav');
 
 nav.addEventListener('click',anim);
 
@@ -13,6 +13,7 @@ function anim()
         nav.style.rotate = '0deg' ;
     }
 };
+
 const header = document.getElementById('header');
 const scrollHeader = 50;
 const back = document.getElementById('back');
@@ -26,8 +27,12 @@ const outdoor = document.getElementById('outdoor');
 const logo = document.getElementById('logo');
 const characterScroll = document.getElementById('characterscroll');
 const character = document.getElementById('character');
-characterScroll.style.display = 'none';
 
+characterScroll.style.display = 'none';
+cabin.classList.add('soulignageblanc');
+member.classList.add('soulignageblanc');
+public.classList.add('soulignageblanc');
+about.classList.add('soulignageblanc');
 window.onscroll = scroll;
 
 function scroll() {
@@ -49,6 +54,15 @@ function scroll() {
             logo.style.marginTop = '0';
             characterScroll.style.display = 'block';
             character.style.display = 'none';
+            nav.style.backgroundColor = 'grey';
+            cabin.classList.add('soulignagenoir');
+            member.classList.add('soulignagenoir');
+            public.classList.add('soulignagenoir');
+            about.classList.add('soulignagenoir');
+            cabin.classList.remove('soulignageblanc');
+            member.classList.remove('soulignageblanc');
+            public.classList.remove('soulignageblanc');
+            about.classList.remove('soulignageblanc');
         }
     else
     {
@@ -67,6 +81,16 @@ function scroll() {
         outdoor.style.color = 'white';
         characterScroll.style.display = 'none';
         character.style.display = 'block';
+        nav.style.background = 'none';
+        cabin.classList.remove('soulignagenoir');
+        member.classList.remove('soulignagenoir');
+        public.classList.remove('soulignagenoir');
+        about.classList.remove('soulignagenoir');
+        cabin.classList.add('soulignageblanc');
+        member.classList.add('soulignageblanc');
+        public.classList.add('soulignageblanc');
+        about.classList.add('soulignageblanc');
+
     }
 };
 
